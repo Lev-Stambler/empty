@@ -7,4 +7,3 @@ RUN groupadd docker
 RUN gpasswd -a gitpod docker
 RUN newgrp docker
 USER root
-RUN service docker start
