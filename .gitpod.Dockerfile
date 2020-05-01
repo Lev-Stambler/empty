@@ -5,7 +5,6 @@ RUN apt-get update && \
 RUN brew install docker
 RUN groupadd docker
 RUN gpasswd -a gitpod docker
-USER docker
 RUN newgrp docker
 USER root
 RUN service docker start
